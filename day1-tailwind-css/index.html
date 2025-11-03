@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-zinc-900 text-white font-[Poppins]">
+    <div
+        class="min-h-screen w-full bg-gradient-to-b from-zinc-900 to-zinc-800 px-10 md:px-28 py-6 relative overflow-hidden">
+
+        <!-- 🔹 Navbar -->
+        <nav class="flex items-center justify-between border-b border-zinc-700 pb-4 relative z-10">
+            <div class="flex items-center gap-4">
+                <img class="w-16 h-14 rounded-md shadow-md cursor-pointer"
+                    src="images/pexels-thepaintedsquare-583847.jpg" alt="Logo" />
+                <h2 class="text-xl font-semibold tracking-wide">BirdShop</h2>
+            </div>
+
+            <ul class="hidden md:flex space-x-8 text-lg font-medium">
+                <li><a href="#" class="hover:text-yellow-300 transition">Home</a></li>
+                <li><a href="#" class="hover:text-yellow-300 transition">About</a></li>
+                <li><a href="#" class="hover:text-yellow-300 transition">Contact</a></li>
+            </ul>
+
+            <button
+                class="bg-yellow-300 text-black px-5 py-2 rounded-xl hover:bg-yellow-400 hover:scale-105 transition-transform duration-300 shadow-md">
+                Log in
+            </button>
+        </nav>
+
+        <!-- 🔹 Hero Section -->
+        <div class="flex flex-col md:flex-row items-center justify-between mt-24 md:mt-40">
+
+            <!-- Text Section -->
+            <div class="max-w-2xl z-10">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                    Bird Shop <br />
+                    <span class="text-yellow-300">Delivery in 5 min 🕊️</span>
+                </h1>
+                <p class="mt-6 text-lg text-zinc-300 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+                    reprehenderit aliquam nam est deleniti assumenda mollitia suscipit enim laborum iure!
+                </p>
+
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#"
+                        class="bg-yellow-300 text-black rounded-3xl py-3 px-8 font-semibold transition duration-300 hover:bg-yellow-400 hover:scale-105">
+                        Order Now
+                    </a>
+                    <a href="#"
+                        class="border border-white px-8 py-3 rounded-3xl inline-block text-white hover:bg-white hover:text-black transition duration-300">
+                        Download App
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="mt-12 md:mt-0 md:w-1/2 flex justify-end">
+                <img src="images/kiran-ck-LSNJ-pltdu8-unsplash.jpg" alt="Bird"
+                    class="object-cover w-80 md:w-[400px] lg:w-[500px] rounded-3xl shadow-2xl transition-transform duration-500 hover:scale-105" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
